@@ -11,7 +11,7 @@
 
 <body>
     <div class="main-window">
-        <div class="chat-list">
+        <div id="chat-list" class="chat-list">
             <div class="chat-add-dialog">
                 <input class="chat-add-dialog-textarea" maxlength="18" placeholder="Nickname..."></input>
                 <button class="chat-add-dialog-button">+</button>
@@ -43,6 +43,7 @@
 
         <div class="chat">
             <div class="chat-header">
+                <button id="display-dialogs-button" class="chat-list-button">></button>
                 <p>Andrushens</p>
             </div>
             <div class="messages">
@@ -138,9 +139,8 @@
                 <textarea class="message-text" rows="3" placeholder="Write a message..."></textarea>
             </div>
         </div>
-
     </div>
-
+    <script src="js/home.js"></script>
 </body>
 
 </html>
