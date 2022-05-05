@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #17212b;
+    --background-color: #0e1621;
+}
+
+body {
+    background: var(--background-color);
+    font-family: 'Poppins';
+}
+
+h1,
+p {
+    color: white;
+}
+
+.navbar {
+    padding-top: 2em;
+    background: var(--primary-color);
+}
+
+a {
+    color: #F2F2F2;
+}
+
+.hero {
+    text-align: center;
+}
+
+::-webkit-input-placeholder {
+    color: lightblue;
+}
+
+.login-textarea {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 16px;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.reviews-section {
+    margin-top: 13.6em;
+    padding: 3em;
+    background: var(--primary-color);
+    color: white;
+}
+
+.login-button {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 16px;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 1080px) {
+    .container {
+        width: 1080px;
+        margin: 0 auto;
+    }
+
+    section {
+        padding: 4.8em 4em;
+    }
+
+    .reviews-section ul {
+        display: flex;
+    }
+}
