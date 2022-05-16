@@ -5,27 +5,38 @@
     --background-color: #0e1621;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     background: var(--background-color);
     font-family: 'Poppins';
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 h1,
-p {
+p,
+a {
     color: white;
 }
 
 .navbar {
-    padding-top: 2em;
+    padding: 2em 0 0.5em 2em;
     background: var(--primary-color);
 }
 
-a {
-    color: #F2F2F2;
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero {
     text-align: center;
+    flex: 1;
 }
 
 ::-webkit-input-placeholder {
@@ -40,10 +51,11 @@ a {
     padding: 15px 32px;
     font-size: 16px;
     cursor: pointer;
+    margin-bottom: 1em;
 }
 
-.reviews-section {
-    margin-top: 13.6em;
+.reviews {
+    margin-top: 3em;
     padding: 3em;
     background: var(--primary-color);
     color: white;
@@ -60,16 +72,11 @@ a {
 }
 
 @media only screen and (min-width: 1080px) {
-    .container {
-        width: 1080px;
-        margin: 0 auto;
-    }
-
     section {
         padding: 4.8em 4em;
     }
 
-    .reviews-section ul {
+    .reviews ul {
         display: flex;
     }
 }

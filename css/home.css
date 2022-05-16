@@ -10,19 +10,31 @@ body {
     background-color: var(--main-background-color);
     color: white;
     display: flex;
-    flex-direction: column;
     font-family: 'Poppins';
     font-size: 1.5em;
-}
-
-.main-window {
-    display: flex;
     overflow-y: hidden;
     overflow-x: hidden;
 }
 
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+small {
+    color: #7f91a4;
+}
+
+:visited,
+:link {
+    color: white;
+    text-decoration: none;
+}
+
 .chat {
     padding-left: 2px;
+    width: 100%;
 }
 
 .chat-list {
@@ -66,7 +78,7 @@ body {
     cursor: pointer;
 }
 
-.chat-list-button {
+.display-chat-list-button {
     font-size: 2em;
     height: 40px;
     width: 40px;
@@ -115,14 +127,23 @@ body {
     background-color: var(--chat-background-color);
     font-size: 0.7em;
     color: #7f91a4;
+    display: flex;
 }
 
 .message-text {
     background-color: var(--chat-background-color);
+    width: 100%;
     padding-top: 12px;
     border-width: 0;
     resize: none;
     color: white;
+}
+
+#button-send {
+    background-color: #2b5278;
+    min-width: 11em;
+    color: white;
+    border-width: 0;
 }
 
 .message-text:focus,
@@ -134,7 +155,7 @@ input:focus {
     visibility: hidden;
 }
 
-.messages {
+.chat-messages {
     display: flex;
     min-width: 370px;
     flex-direction: column;
@@ -170,13 +191,13 @@ input:focus {
         display: none;
     }
 
-    .chat-list-button {
+    .display-chat-list-button {
         display: true;
     }
 }
 
 @media screen and (hover: none) {
-    .chat-list-button {
+    .display-chat-list-button {
         display: flex;
     }
 }

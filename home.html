@@ -10,136 +10,107 @@
 </head>
 
 <body>
-    <div class="main-window">
-        <div id="chat-list" class="chat-list">
-            <div class="chat-add-dialog">
-                <input class="chat-add-dialog-textarea" maxlength="18" placeholder="Nickname..."></input>
-                <button class="chat-add-dialog-button">+</button>
-            </div>
-            <div class="chat-list-body-element">
-                <div class="chat-list-body-element-name-message">
-                    <p>Andrew</p>
-                    <small>Wow! Good!</small>
-                </div>
-                <small>12.12.2012</small>
-            </div>
+    <ul id="chat-list" class="chat-list">
+        <li class="chat-add-dialog">
+            <input class="chat-add-dialog-textarea" maxlength="18" placeholder="Nickname..."></input>
+            <button class="chat-add-dialog-button">+</button>
+        </li>
 
-            <div class="chat-list-body-element">
-                <div class="chat-list-body-element-name-message">
-                    <p>John Doe</p>
-                    <small>I'm John Doe</small>
-                </div>
-                <small>11.12.2012</small>
+        <a href="" class="chat-list-body-element">
+            <div class="chat-list-body-element-name-message">
+                <p>Andrew</p>
+                <small>Wow! Good!</small>
             </div>
+            <small>12.12.2012</small>
+        </a>
+        <a href="" class="chat-list-body-element">
+            <div class="chat-list-body-element-name-message">
+                <p>John Doe</p>
+                <small>I'm John Doe</small>
+            </div>
+            <small>11.12.2012</small>
+        </a>
+        <a href="" class="chat-list-body-element">
+            <div class="chat-list-body-element-name-message">
+                <p>Dohn Joe</p>
+                <small>I'm Dohn Joe</small>
+            </div>
+            <small>11.12.2012</small>
+        </a>
+    </ul>
 
-            <div class="chat-list-body-element">
-                <div class="chat-list-body-element-name-message">
-                    <p>Dohn Joe</p>
-                    <small>I'm Dohn Joe</small>
-                </div>
-                <small>11.12.2012</small>
-            </div>
+    <section class="chat">
+        <div class="chat-header">
+            <button id="display-dialogs-button" class="display-chat-list-button">></button>
+            <p>Andrushens</p>
         </div>
 
-        <div class="chat">
-            <div class="chat-header">
-                <button id="display-dialogs-button" class="chat-list-button">></button>
-                <p>Andrushens</p>
-            </div>
-            <div class="messages">
-                <div class="message-left ">
-                    <div class="message-body">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                            has been the industry's standard dummy text ever since the 1500s</p>
-                        <small>14:22</small>
-                    </div>
-                </div>
+        <ul class="chat-messages">
+            <li class="message-left ">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                    has been the industry's standard dummy text ever since the 1500s</p>
+                <small>14:22</small>
+            </li>
+            <li class="message-right ">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                    has been the industry's standard dummy text ever since the 1500s</p>
+                <small>14:23</small>
+            </li>
+            <li class="message-left ">
+                <p>Ohh!</p>
+                <small>14:24</small>
+            </li>
+            <li class="message-right ">
+                <p>Ohh!</p>
+                <small>14:25</small>
+            </li>
+            <li class="message-left ">
+                <p>Ohh!</p>
+                <small>14:24</small>
+            </li>
+            <li class="message-right ">
+                <p>Ohh!</p>
+                <small>14:25</small>
+            </li>
+            <li class="message-left ">
+                <p>Ohh!</p>
+                <small>14:24</small>
+            </li>
+            <li class="message-right ">
+                <p>Ohh!</p>
+                <small>14:25</small>
+            </li>
+            <li class="message-left ">
+                <p>Ohh!</p>
+                <small>14:24</small>
+            </li>
+            <li class="message-right ">
+                <p>Ohh!</p>
+                <small>14:25</small>
+            </li>
+            <li class="message-left">
+                <p>Ohh!</p>
+                <small>14:24</small>
+            </li>
+            <li class="message-right">
+                <p>Ohh!</p>
+                <small>14:25</small>
+            </li>
+            <li class="message-left">
+                <p>Ohh!</p>
+                <small>14:24</small>
+            </li>
+            <li class="message-right">
+                <p>Ohh!</p>
+                <small>14:25</small>
+            </li>
+        </ul>
 
-                <div class="message-right ">
-                    <div class="message-body">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                            has been the industry's standard dummy text ever since the 1500s</p>
-                        <small>14:23</small>
-                    </div>
-                </div>
-
-                <div class="message-left ">
-                    <div class="message-body">
-                        <p>Ohh!</p>
-                        <small>14:24</small>
-                    </div>
-                </div>
-
-                <div class="message-right ">
-                    <div class="message-body">
-                        <p>Ohh!</p>
-                        <small>14:25</small>
-                    </div>
-                </div>
-
-                <div class="message-left ">
-                    <div class="message-body">
-                        <p>Ohh!</p>
-                        <small>14:24</small>
-                    </div>
-                </div>
-
-                <div class="message-right ">
-                    <div class="message-body">
-                        <p>Ohh!</p>
-                        <small>14:25</small>
-                    </div>
-                </div>
-
-                <div class="message-left ">
-                    <p>Ohh!</p>
-                    <small>14:24</small>
-                </div>
-
-                <div class="message-right ">
-                    <div class="message-body">
-                        <p>Ohh!</p>
-                        <small>14:25</small>
-                    </div>
-                </div>
-
-                <div class="message-left ">
-                    <p>Ohh!</p>
-                    <small>14:24</small>
-                </div>
-
-                <div class="message-right ">
-                    <p>Ohh!</p>
-                    <small>14:25</small>
-                </div>
-
-                <div class="message-left">
-                    <p>Ohh!</p>
-                    <small>14:24</small>
-                </div>
-
-                <div class="message-right">
-                    <p>Ohh!</p>
-                    <small>14:25</small>
-                </div>
-
-
-                <div class="message-left">
-                    <p>Ohh!</p>
-                    <small>14:24</small>
-                </div>
-
-                <div class="message-right">
-                    <p>Ohh!</p>
-                    <small>14:25</small>
-                </div>
-            </div>
-
-            <div class="chat-footer-textarea">
-                <textarea class="message-text" rows="3" placeholder="Write a message..."></textarea>
-            </div>
+        <div class="chat-footer-textarea">
+            <textarea class="message-text" rows="3" placeholder="Write a message..."></textarea>
+            <button id="button-send">Send</button>
         </div>
-    </div>
+    </section>
     <script src="js/home.js"></script>
 </body>
 
