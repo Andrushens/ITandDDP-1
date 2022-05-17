@@ -9,107 +9,107 @@
     <link rel="stylesheet" href="css/home.css">
 </head>
 
-<body>
-    <ul id="chat-list" class="chat-list">
-        <li class="chat-add-dialog">
-            <input class="chat-add-dialog-textarea" maxlength="18" placeholder="Nickname..."></input>
-            <button class="chat-add-dialog-button">+</button>
-        </li>
+<body class="container">
+    <ul id="chat-list" class="chat-list visible">
+        <form class="chat-add-dialog">
+            <input class="chat-add-dialog--textarea" maxlength="18" placeholder="Nickname..."></input>
+            <button class="chat-add-dialog--button">+</button>
+        </form>
 
-        <a href="" class="chat-list-body-element">
-            <div class="chat-list-body-element-name-message">
+        <a href="" class="chat-list--body-element">
+            <div class="chat-list--name-message">
                 <p>Andrew</p>
-                <small>Wow! Good!</small>
+                <small class="hint">Wow! Good!</small>
             </div>
-            <small>12.12.2012</small>
+            <time class="hint">12.12.2012</time>
         </a>
-        <a href="" class="chat-list-body-element">
-            <div class="chat-list-body-element-name-message">
+        <a href="" class="chat-list--body-element">
+            <div class="chat-list--name-message">
                 <p>John Doe</p>
-                <small>I'm John Doe</small>
+                <small class="hint">I'm John Doe</small>
             </div>
-            <small>11.12.2012</small>
+            <time class="hint">12.12.2012</time>
         </a>
-        <a href="" class="chat-list-body-element">
-            <div class="chat-list-body-element-name-message">
+        <a href="" class="chat-list--body-element">
+            <div class="chat-list--name-message">
                 <p>Dohn Joe</p>
-                <small>I'm Dohn Joe</small>
+                <small class="hint">I'm Dohn Joe</small>
             </div>
-            <small>11.12.2012</small>
+            <time class="hint">11.12.2012</time>
         </a>
     </ul>
 
     <section class="chat">
-        <div class="chat-header">
-            <button id="display-dialogs-button" class="display-chat-list-button">></button>
+        <div class="chat--header">
+            <button id="display-dialogs-button" class="display-dialogs-button"><</button>
             <p>Andrushens</p>
         </div>
 
-        <ul class="chat-messages">
+        <ul class="chat--messages">
             <li class="message-left ">
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                     has been the industry's standard dummy text ever since the 1500s</p>
-                <small>14:22</small>
+                <time class="hint">14:22</time>
             </li>
             <li class="message-right ">
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                     has been the industry's standard dummy text ever since the 1500s</p>
-                <small>14:23</small>
+                <time class="hint">14:23</time>
             </li>
             <li class="message-left ">
                 <p>Ohh!</p>
-                <small>14:24</small>
+                <time class="hint">14:24</time>
             </li>
             <li class="message-right ">
                 <p>Ohh!</p>
-                <small>14:25</small>
+                <time class="hint">14:25</time>
             </li>
             <li class="message-left ">
                 <p>Ohh!</p>
-                <small>14:24</small>
+                <time class="hint">14:24</time>
             </li>
             <li class="message-right ">
                 <p>Ohh!</p>
-                <small>14:25</small>
+                <time class="hint">14:25</time>
             </li>
             <li class="message-left ">
                 <p>Ohh!</p>
-                <small>14:24</small>
+                <time class="hint">14:24</time>
             </li>
             <li class="message-right ">
                 <p>Ohh!</p>
-                <small>14:25</small>
+                <time class="hint">14:25</time>
             </li>
             <li class="message-left ">
                 <p>Ohh!</p>
-                <small>14:24</small>
+                <time class="hint">14:24</time>
             </li>
             <li class="message-right ">
                 <p>Ohh!</p>
-                <small>14:25</small>
+                <time class="hint">14:25</time>
             </li>
             <li class="message-left">
                 <p>Ohh!</p>
-                <small>14:24</small>
+                <time class="hint">14:24</time>
             </li>
             <li class="message-right">
                 <p>Ohh!</p>
-                <small>14:25</small>
+                <time class="hint">14:25</time>
             </li>
             <li class="message-left">
                 <p>Ohh!</p>
-                <small>14:24</small>
+                <time class="hint">14:24</time>
             </li>
             <li class="message-right">
                 <p>Ohh!</p>
-                <small>14:25</small>
+                <time class="hint">14:25</time>
             </li>
         </ul>
 
-        <div class="chat-footer-textarea">
+        <form class="chat--footer-textarea">
             <textarea class="message-text" rows="3" placeholder="Write a message..."></textarea>
             <button id="button-send">Send</button>
-        </div>
+        </form>
     </section>
     <script src="js/home.js"></script>
 </body>

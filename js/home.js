@@ -1,13 +1,13 @@
-var isDialogsShown = false;
+var isDialogsShown = true;
 
 document.getElementById("display-dialogs-button").onclick = function () {
-    var button = document.getElementById("display-dialogs-button");
-    var list = document.getElementById("chat-list");
+    let button = document.getElementById("display-dialogs-button");
+    let list = document.getElementById("chat-list");
     if (isDialogsShown) {
-        list.style.display = "none";
+        list.className = 'chat-list non-visible';
         button.innerHTML = '>';
     } else {
-        list.style.display = "flex";
+        list.className = 'chat-list visible';
         button.innerHTML = '<';
     }
     isDialogsShown = !isDialogsShown;
