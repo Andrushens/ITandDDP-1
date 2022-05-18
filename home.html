@@ -9,106 +9,26 @@
     <link rel="stylesheet" href="css/home.css">
 </head>
 
-<body class="container">
+<body class="container" onload="onLoad()">
     <ul id="chat-list" class="chat-list visible">
-        <form class="chat-add-dialog">
-            <input class="chat-add-dialog--textarea" maxlength="18" placeholder="Nickname..."></input>
-            <button class="chat-add-dialog--button">+</button>
+        <form name="dialog" class="chat-add-dialog">
+            <input class="chat-add-dialog--textarea" name="text" maxlength="18" placeholder="Nickname..."></input>
+            <input class="chat-add-dialog--button" type="button" id="button-create" value="+" onclick="onCreateDialog()">
         </form>
-
-        <a href="" class="chat-list--body-element">
-            <div class="chat-list--name-message">
-                <p>Andrew</p>
-                <small class="hint">Wow! Good!</small>
-            </div>
-            <time class="hint">12.12.2012</time>
-        </a>
-        <a href="" class="chat-list--body-element">
-            <div class="chat-list--name-message">
-                <p>John Doe</p>
-                <small class="hint">I'm John Doe</small>
-            </div>
-            <time class="hint">12.12.2012</time>
-        </a>
-        <a href="" class="chat-list--body-element">
-            <div class="chat-list--name-message">
-                <p>Dohn Joe</p>
-                <small class="hint">I'm Dohn Joe</small>
-            </div>
-            <time class="hint">11.12.2012</time>
-        </a>
     </ul>
 
     <section class="chat">
         <div class="chat--header">
             <button id="display-dialogs-button" class="display-dialogs-button"><</button>
-            <p>Andrushens</p>
+            <p id="current-user"></p>
+            <button id="delete-button" class="delete-button">Delete</button>
         </div>
 
-        <ul class="chat--messages">
-            <li class="message-left ">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                    has been the industry's standard dummy text ever since the 1500s</p>
-                <time class="hint">14:22</time>
-            </li>
-            <li class="message-right ">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                    has been the industry's standard dummy text ever since the 1500s</p>
-                <time class="hint">14:23</time>
-            </li>
-            <li class="message-left ">
-                <p>Ohh!</p>
-                <time class="hint">14:24</time>
-            </li>
-            <li class="message-right ">
-                <p>Ohh!</p>
-                <time class="hint">14:25</time>
-            </li>
-            <li class="message-left ">
-                <p>Ohh!</p>
-                <time class="hint">14:24</time>
-            </li>
-            <li class="message-right ">
-                <p>Ohh!</p>
-                <time class="hint">14:25</time>
-            </li>
-            <li class="message-left ">
-                <p>Ohh!</p>
-                <time class="hint">14:24</time>
-            </li>
-            <li class="message-right ">
-                <p>Ohh!</p>
-                <time class="hint">14:25</time>
-            </li>
-            <li class="message-left ">
-                <p>Ohh!</p>
-                <time class="hint">14:24</time>
-            </li>
-            <li class="message-right ">
-                <p>Ohh!</p>
-                <time class="hint">14:25</time>
-            </li>
-            <li class="message-left">
-                <p>Ohh!</p>
-                <time class="hint">14:24</time>
-            </li>
-            <li class="message-right">
-                <p>Ohh!</p>
-                <time class="hint">14:25</time>
-            </li>
-            <li class="message-left">
-                <p>Ohh!</p>
-                <time class="hint">14:24</time>
-            </li>
-            <li class="message-right">
-                <p>Ohh!</p>
-                <time class="hint">14:25</time>
-            </li>
-        </ul>
+        <ul id="chat--messages"></ul>
 
-        <form class="chat--footer-textarea">
-            <textarea class="message-text" rows="3" placeholder="Write a message..."></textarea>
-            <button id="button-send">Send</button>
+        <form name="message" class="chat--footer-textarea">
+            <textarea name="text" class="message-text" rows="3" placeholder="Write a message..."></textarea>
+            <input type="button" id="button-send" value="Send" onclick="onSendMessage()">
         </form>
     </section>
     <script src="js/home.js"></script>

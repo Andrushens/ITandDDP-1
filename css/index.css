@@ -43,7 +43,7 @@ a {
     color: lightblue;
 }
 
-.login-textarea {
+#login-textarea {
     background-color: var(--primary-color);
     border: none;
     border-radius: 16px;

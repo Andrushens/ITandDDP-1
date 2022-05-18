@@ -98,7 +98,17 @@
     background-color: var(--chat-background-color);
     font-size: 65%;
     display: flex;
-    padding-left: 12px;
+    padding-left: .5em;
+    padding-right: 1.5em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.delete-button {
+    font-size: 18px;
+    background-color: var(--devider-color);
+    color: red;
+    cursor: pointer;
 }
 
 .chat-list--body-element {
@@ -162,7 +172,7 @@ input:focus {
     color: #7f91a4;
 }
 
-.chat--messages {
+#chat--messages {
     padding: 0;
     margin: 0;
     list-style-type: none;
